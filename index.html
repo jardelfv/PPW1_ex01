@@ -5,103 +5,126 @@
     <meta charset="utf-8">
     <meta name="author" content="Jardel Vasconcelos">
     <title>Página principal do site de jogos</title>
+    <link href="estilo.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <h1>Meus Jogos</h1>
-    <p>Sejam bem vindos!</p>
-    <p>
-    <ul>
-        <li><a href="jogo1.html">League of Legends</a></li>
-        <li><a href="jogo2.html">Forza Horizon 4</a></li>
-        <li><a href="jogo3.html">God of War</a></li>
-        <li><a href="jogo4.html">The Legend of Zelda</a></li>
-    </ul>
-    </p>
-
-    <table border="1">
-        <caption>Tabela de comparativos Games</caption>
-        <tr>
-            <th>Nome</th>
-            <th>Data lançamento</th>
-            <th>Estilo</th>
-            <th>Fabricante</th>
-            <th>Plataformas</th>
-            <th colspan="2">Preço (De/Até)</th>
-        </tr>
-        <!-- Jogo 1-->
-        <tr>
-            <td rowspan="2">League of Legends</td>
-            <td rowspan="2">27 de outubro de 2009 (10 anos)</td>
-            <td rowspan="2">Multiplayer online battle arena</td>
-            <td rowspan="2">Riot Games</td>
-            <td>Microsoft Windows</td>
-            <td rowspan="2">Free</td>
-            <td rowspan="2">Free</td>
-        </tr>
+    <div>
+        <div>
+        <h1>Meus Jogos</h1>
+        </div>
         
-        <tr>
-            <td>OS X</td>
+        <section id="main">
             
-        </tr>
-        <!-- Jogo 2-->
-        <tr>
-            <td rowspan="2">Forza Horizon 4</td>
-            <td rowspan="2">02 de Outubro de 2018</td>
-            <td rowspan="2">Um jogador Multijogador</td>
-            <td rowspan="2">Microsoft Studios</td>
-            <td>Xbox One </td>
-            <td rowspan="2">R$ 194,95</td>
-            <td rowspan="2">R$ 312,45</td>
-        </tr>
-        <tr>
-            <td>Microsoft Windows</td>
-            
-        </tr>
-         <!-- Jogo 3-->
-        <tr>
-            <td rowspan="4">God of War</td>
-            <td rowspan="4">22 de março de 2005</td>
-            <td rowspan="4">Ação-aventura Hack and slash</td>
-            <td rowspan="4">Sony Interactive Entertainment</td>
-            <td>PlayStation 2</td>
-            <td rowspan="4">R$ 59,90</td>
-            <td rowspan="4">R$ 79,00</td>
-        </tr>
-        <tr>
-            <td>Java ME</td>
-        </tr>
-        <tr>
-            <td>PlayStation 3</td>
-        </tr>
-        <tr>
-            <td>PlayStation 4</td>
-        </tr>
-        <!-- Jogo 4-->
-        <tr>
-            <td rowspan="4">The Legend of Zelda</td>
-            <td rowspan="4">21 de fevereiro de 1986</td>
-            <td rowspan="4">Ação-aventura</td>
-            <td rowspan="4">Nintendo</td>
-            <td>Super Nintendo </td>
-            <td rowspan="4">R$ 189,90</td>
-            <td rowspan="4">R$ 250,79</td>
-        </tr>
-        <tr>
-            <td>Game Boy</td>
-        </tr>
-        <tr>
-            <td>Nintendo Switch</td>
-        </tr>
-        <tr>
-            <td>Nintendo 64</td>
-        </tr>
-        <tr>
-            <td colspan="7">Valores consultados em 22/03/2020.</td>
-        </tr>
-    </table>
-    <i>Tabela 1: Comparativo Jogos</i>
+            <nav class="horizontal">
+                <ul>
+                    <li><a href="jogo1.html">League of Legends</a></li>
+                    <li><a href="jogo2.html">Forza Horizon 4</a></li>
+                    <li><a href="jogo3.html">God of War</a></li>
+                    <li><a href="jogo4.html">The Legend of Zelda</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <p>Sejam bem vindos!</p>
+                <table border="1">
+                    <caption>Tabela de comparativos Games</caption>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data lançamento</th>
+                        <th>Estilo</th>
+                        <th>Fabricante</th>
+                        <th>Plataformas</th>
+                        <th colspan="2">Preço (De/Até)</th>
+                    </tr>
+                    <!-- Jogo 1-->
+                    <tr>
+                        <td rowspan="2">League of Legends</td>
+                        <td rowspan="2">27 de outubro de 2009 (10 anos)</td>
+                        <td rowspan="2">Multiplayer online battle arena</td>
+                        <td rowspan="2">Riot Games</td>
+                        <td>Microsoft Windows</td>
+                        <td rowspan="2">Free</td>
+                        <td rowspan="2">Free</td>
+                    </tr>
+
+                    <tr>
+                        <td>OS X</td>
+
+                    </tr>
+                    <!-- Jogo 2-->
+                    <tr>
+                        <td rowspan="2">Forza Horizon 4</td>
+                        <td rowspan="2">02 de Outubro de 2018</td>
+                        <td rowspan="2">Um jogador Multijogador</td>
+                        <td rowspan="2">Microsoft Studios</td>
+                        <td>Xbox One </td>
+                        <td rowspan="2">R$ 194,95</td>
+                        <td rowspan="2">R$ 312,45</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Windows</td>
+
+                    </tr>
+                    <!-- Jogo 3-->
+                    <tr>
+                        <td rowspan="4">God of War</td>
+                        <td rowspan="4">22 de março de 2005</td>
+                        <td rowspan="4">Ação-aventura Hack and slash</td>
+                        <td rowspan="4">Sony Interactive Entertainment</td>
+                        <td>PlayStation 2</td>
+                        <td rowspan="4">R$ 59,90</td>
+                        <td rowspan="4">R$ 79,00</td>
+                    </tr>
+                    <tr>
+                        <td>Java ME</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 3</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 4</td>
+                    </tr>
+                    <!-- Jogo 4-->
+                    <tr>
+                        <td rowspan="4">The Legend of Zelda</td>
+                        <td rowspan="4">21 de fevereiro de 1986</td>
+                        <td rowspan="4">Ação-aventura</td>
+                        <td rowspan="4">Nintendo</td>
+                        <td>Super Nintendo </td>
+                        <td rowspan="4">R$ 189,90</td>
+                        <td rowspan="4">R$ 250,79</td>
+                    </tr>
+                    <tr>
+                        <td>Game Boy</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo Switch</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo 64</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">Valores consultados em 22/03/2020.</td>
+                    </tr>
+                </table>
+                <i>Tabela 1: Comparativo Jogos</i>
+            </section>
+
+        </section>
+
+        <footer>
+
+            <div id="menu-footer">
+                <ul>
+                    <li><a href="#">Cadastre-se</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        
+        </footer>
+    </div>
 </body>
 
 </html>
