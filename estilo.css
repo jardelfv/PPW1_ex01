@@ -1,22 +1,32 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
+html, body {
     
     font-family:Verdana, Geneva, sans-serif;
     background-color:rgb(104, 98, 98);
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 header, section, footer {
     display:block;
 }
-.topo {
+h1, h2, a{
+    text-align:center;
+    color: #FFE6FF;
+}
+.topo, h1{
     width: 100%;
     height: 60px;
-    background-color: green;
-
+    background-color: rgb(86, 93, 97);
+    
+    
 }
 #container {
     width:1000px;
@@ -26,7 +36,6 @@ header, section, footer {
 }
 
 header {
-    background-image: url("bluebar1.jpg");
     text-align:center;
     margin-top:10px;
     height:120px;
@@ -50,31 +59,44 @@ header img {
 }
 
 #main section {
-    position:relative; left:20%; top:0;
+    position:relative;
+    left:20%;
+    top:0;
     padding: 10px;
     background: rgb(161, 161, 161);
 }
 
-#main nav.horizontal {
-    left:0; z-index:999; top:0px;
+#main nav.vertical {
+    left:0;
+    z-index:999;
+    top:0px;
     width:20%;
     height:100%;
-    background: rgb(78, 77, 77);
+    background: rgb(46, 46, 46);
     position:absolute;
-    /*
-    background-image: url(bluebar1.jpg);
-    background-repeat: repeat-y;
-    */
+
 }
 
-#main nav.horizontal li {
-    font-size:18px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+
+#main nav.vertical ul li{
+    font-size:14px;
+    text-align: center;
     list-style:none;
-    margin: 20px 0px;
+    margin: auto;
+    padding: 4px;
+    border-style: solid;
+    border-color: white;
 }
 
-nav.horizontal li a:hover {
-    background-color:#FFE6FF;
+nav.vertical li a:hover {
+    background-color:black;
 }
 
 footer {
@@ -83,15 +105,19 @@ footer {
     padding-top:10px;
     text-align:center;
     clear:both;
+    background: rgb(48, 46, 46);
 }
 
-#menu-footer ul li a {
-    padding: 2px 10px;
-    display: inline-block;
-
-    
-    background-color:#EDEDED;
-    color: #333;
-    text-decoration: none;
-    border-bottom:3px solid #EDEDED;
+  #menu-footer li{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    float: right;
+  }
+#menu-footer footer ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
 }
