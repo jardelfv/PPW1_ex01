@@ -2,16 +2,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 html, body {
     
     font-family:Verdana, Geneva, sans-serif;
-    background-color:rgb(104, 98, 98);
+    background-color:white;
 
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 header, section, footer {
@@ -21,51 +22,38 @@ h1, h2, a{
     text-align:center;
     color: #FFE6FF;
 }
-.topo, h1{
+.topo h1{
     width: 100%;
     height: 60px;
     background-color: rgb(86, 93, 97);
-    
+    text-align:center;
     
 }
 #container {
-    width:1000px;
-    min-height:800px;
+    width:80%;
     margin: 0px auto;
-    background-color:#FFE6FF;
+    background-color:white;
 }
 
-header {
-    text-align:center;
-    margin-top:10px;
-    height:120px;
-    
-}
-
-header h1 {
-    vertical-align:middle;
-}
-
-header img {
-    float:right;
-    display:block;
-    padding-top:5px;
-}
 
 #main {
-    background-color: rgb(86, 93, 97);
+    background-color: rgb(255, 255, 255);
     position:relative;
     height:100%;
 }
 
 #main section {
+    margin-top: 10px;
     position:relative;
     left:20%;
     top:0;
     padding: 10px;
     background: rgb(161, 161, 161);
 }
-
+nav h2{
+    text-align: center;
+    color: blanchedalmond;
+}
 #main nav.vertical {
     left:0;
     z-index:999;
@@ -74,12 +62,12 @@ header img {
     height:100%;
     background: rgb(46, 46, 46);
     position:absolute;
-
+    
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     
   }
@@ -98,11 +86,34 @@ ul {
 nav.vertical li a:hover {
     background-color:black;
 }
+p{
+    line-height: 200%;
+	font-size: 18px;
+    text-align: left;
+    padding: 10px;
+}
+.conteudo a {
+    color: teal;
+}
+.conteudo, p, h1, h2{
+    width: 80%;
+    margin-left:0;
+    text-align: left;
+    color: black;
+    
+}
+img{
+    max-width: 100%;
+    width: 390px;
+    height: 390px;
+    padding: 3%;
+    margin-left: 15%;
+    object-fit: cover;
+}
 
 footer {
     height:50px;
-    margin-top:20px;
-    padding-top:10px;
+    margin-top:10px;
     text-align:center;
     clear:both;
     background: rgb(48, 46, 46);
@@ -113,7 +124,7 @@ footer {
     color: white;
     text-align: center;
     padding: 16px;
-    float: right;
+    float: left;
   }
 #menu-footer footer ul li a {
     display: block;
