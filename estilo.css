@@ -102,6 +102,13 @@ p{
     color: black;
     
 }
+#logoShop, img{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    margin-left: 10px;
+    object-fit: contain;
+}
 img{
     max-width: 100%;
     width: 390px;
@@ -110,6 +117,7 @@ img{
     margin-left: 15%;
     object-fit: cover;
 }
+
 
 footer {
     height:50px;
@@ -131,4 +139,17 @@ footer {
     color: white;
     text-align: center;
     padding: 16px;
+}
+table.bordaSimples {
+    border-collapse: collapse;
+    
+}
+ 
+table.bordaSimples td {
+    border: 1px solid black;
+}
+ 
+table.bordaSimples th {
+    border: 1px solid black;
+    
 }
