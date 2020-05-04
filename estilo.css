@@ -62,7 +62,6 @@ nav h2{
     height:100%;
     background: rgb(46, 46, 46);
     position:absolute;
-    
 }
 
 ul {
@@ -152,4 +151,31 @@ table.bordaSimples td {
 table.bordaSimples th {
     border: 1px solid black;
     
+}
+label.faleconosco {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    padding-top: 10px;
+    margin: 10px;
+
+}
+.form1 {
+    float: left;
+    display: inline-block;
+    padding: 20px;
+}
+input{
+    padding-top: 10px;
+    margin: 10px;
+    width: 350px;
+}
+textarea{
+    padding-top: 10px;
+    margin: 10px;
+}
+.msg{
+    width: 350px; 
+    height: 100px; 
+
 }
