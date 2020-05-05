@@ -173,13 +173,16 @@ label.cadastro {
     display: inline-block;
     padding: 10px;
 }
-input{
-    padding-top: 10px;
-    margin: 10px;
-    
-}
+
 .largura-inputs{
     width: 250px;
+    padding-top: 10px;
+    margin: 10px;
+}
+.largura-inputs2{
+    width: 350px;
+    padding-top: 10px;
+    margin: 10px;
 }
 textarea{
     padding-top: 10px;
@@ -193,4 +196,7 @@ textarea{
 select{
     padding-top: 10px;
     margin: 10px;
+}
+#ajuste{
+    height: 500px;
 }
