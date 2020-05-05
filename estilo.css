@@ -30,7 +30,7 @@ h1, h2, a{
     
 }
 #container {
-    width:80%;
+    width:100%;
     margin: 0px auto;
     background-color:white;
 }
@@ -160,15 +160,26 @@ label.faleconosco {
     margin: 10px;
 
 }
+label.cadastro {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    padding-top: 10px;
+    margin: 10px;
+
+}
 .form1 {
     float: left;
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
 }
 input{
     padding-top: 10px;
     margin: 10px;
-    width: 350px;
+    
+}
+.largura-inputs{
+    width: 250px;
 }
 textarea{
     padding-top: 10px;
@@ -178,4 +189,8 @@ textarea{
     width: 350px; 
     height: 100px; 
 
+}
+select{
+    padding-top: 10px;
+    margin: 10px;
 }
