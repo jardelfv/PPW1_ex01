@@ -5,16 +5,20 @@
     <meta charset="utf-8">
     <meta name="author" content="Jardel Vasconcelos">
     <title>Página principal do site de jogos</title>
+
+    <script src="bootstrap-4.5.0-dist/jquery.js"></script>
+    <script src="bootstrap-4.5.0-dist/bootstrap.min.js"></script>
     <link href="/bootstrap-4.5.0-dist/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-4.5.0-dist/footer.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <!-- <object type="text/html" class="col-12" data="navbar.html"></object> -->
     <div id="container">
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">JV</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -27,8 +31,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Jogos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -40,29 +43,14 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cadastre-se</a>
+                        <a class="nav-link" href="cadastro.html">Cadastre-se</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <div class="topo">
-
-        </div>
-
         <section id="main">
-
-            <nav class="vertical">
-                <h1>Meus Jogos</h1>
-                <h2>Links para jogos</h2>
-                <br>
-                <ul>
-                    <li><a href="jogo1.html">League of Legends</a></li>
-                    <li><a href="jogo2.html">Forza Horizon 4</a></li>
-                    <li><a href="jogo3.html">God of War</a></li>
-                    <li><a href="jogo4.html">The Legend of Zelda</a></li>
-                </ul>
-            </nav>
+            <h1>Meus Jogos</h1>
 
             <section class="conteudo">
                 <p>Sejam bem vindos!</p>
@@ -154,26 +142,16 @@
 
 
         <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4">
+        <footer class="page-footer font-small pt-4 bg-dark text-white">
 
             <!-- Footer Links -->
             <div class="container-fluid text-center text-md-left">
 
                 <!-- Grid row -->
-                <div class="row">
+                <div class="row text-center">
 
                     <div class="col-md-4">
-                        <h5 class="text-uppercase">Fale Conosco</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="faleconosco.html">Fale Conosco</a>
-                            </li>
-                            <li>
-                                <a href="cadastro.html">Cadastre-se</a>
-                            </li>
-                            
-                        </ul>
+                        <h5 class="text-uppercase"><a href="faleconosco.html">Fale Conosco</a></h5>
 
                     </div>
 
