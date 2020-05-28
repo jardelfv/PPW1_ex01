@@ -4,99 +4,181 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Jardel Vasconcelos">
-    <link href="estilo.css" rel="stylesheet">
     <title>The Legend of Zelda</title>
+
+    <script src="bootstrap-4.5.0-dist/jquery.js"></script>
+    <script src="bootstrap-4.5.0-dist/bootstrap.min.js"></script>
+    <link href="/bootstrap-4.5.0-dist/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-4.5.0-dist/footer.css" rel="stylesheet">
+
+    <!-- CDN e css para social midia icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/bootstrap-4.5.0-dist/social_icon.css" rel="stylesheet">
+
+    <style type="text/css">
+        #img-lateral {
+            max-width: 100%;
+            width: 300px;
+            height: 200px;
+            padding: 3%;
+            object-fit: cover;
+        }
+
+        #img-compra {
+            max-width: 80%;
+            width: 150px;
+            height: 100px;
+            padding: 3%;
+            object-fit: contain;
+        }
+    </style>
+    
 </head>
 
 <body>
     <div id="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">JV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preco.html">Preços</a>
+                    </li>
 
-        <div class="topo">
-            <h1>The Legend of Zelda</h1>
-        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Jogos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="jogo1.html">League of Legends</a>
+                            <a class="dropdown-item" href="jogo2.html">Forza Horizon 4</a>
+                            <a class="dropdown-item" href="jogo3.html">God of War</a>
+                            <a class="dropdown-item" href="jogo4.html">The Legend of Zelda</a>
+                        </div>
+                    </li>
 
-        <section id="main">
-
-            <nav class="vertical">
-                <h2>Links para jogos</h2>
-                <br>
-                <ul>
-                    <li><a href="jogo1.html">League of Legends</a></li>
-                    <li><a href="jogo2.html">Forza Horizon 4</a></li>
-                    <li><a href="jogo3.html">God of War</a></li>
-                    <li><a href="jogo4.html">The Legend of Zelda</a></li>
-                </ul>
-            </nav>
-
-            <section class="conteudo">
-            <p>
-                <a href="index.html">Página Inicial</a>
-            </p>
-            <p>
-                <a name="topo">
-                    <h2>Sobre</h2>
-                </a>
-            </p>
-            <p>
-                The Legend of Zelda (ゼルダの伝説 Zeruda no Densetsu?) é uma série de jogos eletrônicos da Nintendo criada em
-                1986 por Shigeru Miyamoto e Takashi Tezuka. Os jogos se passam no reino de Hyrule, num ambiente de
-                fantasia.
-                A jogabilidade mistura aventura e ação com elementos diversos. A série é muito apreciada por suas tramas
-                complexas, quebra-cabeças, jogabilidade e pela superprodução.
-            </p>
-            <p>
-                O protagonista é o jovem herói Link cuja missão é proteger o reino de Hyrule e a Triforce, a relíquia
-                deixada
-                pelas Deusas criadoras do mundo, capaz de realizar desejos trazendo ao mundo uma era de harmonia e
-                prosperidade, mas que também poderia destruí-lo caindo em mãos erradas. Cada um dos triângulos tem uma
-                virtude
-                diferente: Coragem, Sabedoria e Poder. O principal antagonista da série é Ganon. Porém conforme o tempo
-                que os
-                jogos foram evoluindo, se estabeleceu na mitologia, uma grande guerra contra o mal, trazendo novos
-                vilões à tona.
-            </p>
-            <p>
-                A Philips, durante o acordo para construir um acessório de CD para o Super SNES, conseguiu os direitos
-                da
-                série e lançou três jogos Zelda para seu console CD-i (um recorde de Zelda em uma plataforma, igualado
-                apenas
-                pelo Game Boy Color, o GameCube e - se considerados os remakes - o GBA): Link: The Faces of Evil (1993),
-                Zelda: The Wand of Gamelon (1993) e Zelda's Adventure (1995), os 3 sem participação da Nintendo. São
-                considerados bem inferiores em relação a série "oficial", e receberam muitas criticas baixas dos fãs da
-                franquia.
-            </p>
-
-            <h2>Onde comprar</h2>
-            <a href="https://store.nintendo.com.br/the-legend-of-zelda-breath-of-the-wild" target="_blank">
-                <img src="img/nintendo_eShop.jpeg" id="logoShop">
-            </a>
-            <a href="https://www.sngames.com.br/the-legend-of-zelda-breath-of-the-wild-nintendo-switch-midia-digital?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&sku=KG2J67QEK-vip&gclid=Cj0KCQjwmdzzBRC7ARIsANdqRRlPvfDKYcPudTa6XTKNu8A28T3umzupDzr9MnixH9QenNnEvStwrG0aAm86EALw_wcB" target="_blank">
-                <img src="img/sn_Games.png" id="logoShop">
-            </a>
-            <a href="https://www.submarino.com.br/produto/49037964/gift-card-digital-the-legend-of-zelda-breath-of-the-wild-para-nintendo-switch?WT.srch=1&acc=d47a04c6f99456bc289220d5d0ff208d&epar=bp_pl_00_go_gift_card_gmv&gclid=Cj0KCQjwmdzzBRC7ARIsANdqRRkWdZTl9NVTyesLEgsj6HEMv1PzMzE-ly4bfgQ5xYjvm9UK4YTT35AaAvsuEALw_wcB&i=5ad046d9eec3dfb1f82b5051&o=5c24ed376c28a3cb50446786&opn=XMLGOOGLE&sellerid=13880252000102&wt.srch=1" target="_blank">
-                <img src="img/submarino.png" id="logoShop">
-            </a>
-            
-            <h2>Imagens</h2>
-            <img src="img/fig10.jpg" alt="God of War" width="600" height="300">
-            <br>
-            <img src="img/fig11.jpg" alt="God of War" width="600" height="300">
-            <br>
-            <img src="img/fig12.jpg" alt="God of War" width="600" height="300">
-            <p>
-                <a href="#topo">Topo</a>
-            </p>
-            </section>
-        </section>
-    
-        <footer>
-            <div id="menu-footer">
-                <ul>
-                    <li><a href="cadastro.html">&raquo;Cadastre-se</a></li>
-                    <li><a href="faleconosco.html">&raquo;Fale Conosco</a></li>
-                    <li><a href="#">&raquo;Facebook</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+                    </li>
                 </ul>
             </div>
+        </nav>
+
+        <section class="row">
+            <!-- Coluna 1 -->
+            <div class="col-sm-12 col-md-8 pl-5 pt-3">
+                <p>
+                    <a name="topo">
+                        <h2>The Legend of Zelda</h2>
+                    </a>
+                </p>
+                <p>
+                    The Legend of Zelda (ゼルダの伝説 Zeruda no Densetsu?) é uma série de jogos eletrônicos da Nintendo criada em
+                    1986 por Shigeru Miyamoto e Takashi Tezuka. Os jogos se passam no reino de Hyrule, num ambiente de
+                    fantasia.
+                    A jogabilidade mistura aventura e ação com elementos diversos. A série é muito apreciada por suas tramas
+                    complexas, quebra-cabeças, jogabilidade e pela superprodução.
+                </p>
+                <p>
+                    O protagonista é o jovem herói Link cuja missão é proteger o reino de Hyrule e a Triforce, a relíquia
+                    deixada
+                    pelas Deusas criadoras do mundo, capaz de realizar desejos trazendo ao mundo uma era de harmonia e
+                    prosperidade, mas que também poderia destruí-lo caindo em mãos erradas. Cada um dos triângulos tem uma
+                    virtude
+                    diferente: Coragem, Sabedoria e Poder. O principal antagonista da série é Ganon. Porém conforme o tempo
+                    que os
+                    jogos foram evoluindo, se estabeleceu na mitologia, uma grande guerra contra o mal, trazendo novos
+                    vilões à tona.
+                </p>
+                <p>
+                    A Philips, durante o acordo para construir um acessório de CD para o Super SNES, conseguiu os direitos
+                    da
+                    série e lançou três jogos Zelda para seu console CD-i (um recorde de Zelda em uma plataforma, igualado
+                    apenas
+                    pelo Game Boy Color, o GameCube e - se considerados os remakes - o GBA): Link: The Faces of Evil (1993),
+                    Zelda: The Wand of Gamelon (1993) e Zelda's Adventure (1995), os 3 sem participação da Nintendo. São
+                    considerados bem inferiores em relação a série "oficial", e receberam muitas criticas baixas dos fãs da
+                    franquia.
+                </p>
+        
+                <p>
+                    <a href="#topo">Topo</a>
+                </p>
+            </div>
+            <!-- Coluna 2 -->
+            <div class="col-sm-12 col-md-4 pr-3">
+                <h2>Imagens</h2>
+                <img id="img-lateral" src="img/fig10.jpg" alt="God of War" width="600" height="300">
+                <br>
+                <img id="img-lateral" src="img/fig11.jpg" alt="God of War" width="600" height="300">
+                <br>
+                <img id="img-lateral" src="img/fig12.jpg" alt="God of War" width="600" height="300">
+            </div>
+        
+            <div class="row pl-4">
+                <div class="col-sm-12 col-md12">
+                    <h2>Onde comprar</h2>
+                    <a href="https://store.nintendo.com.br/the-legend-of-zelda-breath-of-the-wild" target="_blank">
+                        <img id="img-compra" src="img/nintendo_eShop.jpeg" id="logoShop">
+                    </a>
+                    <a href="https://www.sngames.com.br/the-legend-of-zelda-breath-of-the-wild-nintendo-switch-midia-digital?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&sku=KG2J67QEK-vip&gclid=Cj0KCQjwmdzzBRC7ARIsANdqRRlPvfDKYcPudTa6XTKNu8A28T3umzupDzr9MnixH9QenNnEvStwrG0aAm86EALw_wcB"
+                        target="_blank">
+                        <img id="img-compra" src="img/sn_Games.png" id="logoShop">
+                    </a>
+                    <a href="https://www.submarino.com.br/produto/49037964/gift-card-digital-the-legend-of-zelda-breath-of-the-wild-para-nintendo-switch?WT.srch=1&acc=d47a04c6f99456bc289220d5d0ff208d&epar=bp_pl_00_go_gift_card_gmv&gclid=Cj0KCQjwmdzzBRC7ARIsANdqRRkWdZTl9NVTyesLEgsj6HEMv1PzMzE-ly4bfgQ5xYjvm9UK4YTT35AaAvsuEALw_wcB&i=5ad046d9eec3dfb1f82b5051&o=5c24ed376c28a3cb50446786&opn=XMLGOOGLE&sellerid=13880252000102&wt.srch=1"
+                        target="_blank">
+                        <img id="img-compra" src="img/submarino.png" id="logoShop">
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="page-footer font-small pt-4 bg-dark text-white">
+            <div class="container-fluid text-center text-md-left">
+    
+                <!-- Grid row -->
+                <div class="row text-center">
+    
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase"><a href="faleconosco.html">Fale Conosco</a></h5>
+    
+                    </div>
+    
+                    <hr class="clearfix w-100 d-md-none pb-3">
+    
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Conecte</h5>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Contato</h5>
+                        <h5 class="">0800-000-000</h5>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <!-- Copyright -->
+            <div class=" footer-copyright text-center py-3 ">© 2020 Copyright:
+                <a href="https://jardel.dev/ "> jardel.dev</a>
+            </div>
+            <!-- Copyright -->
+    
         </footer>
     </div>
 </body>
