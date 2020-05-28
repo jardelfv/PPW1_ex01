@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jardel Vasconcelos">
+    <title>Página principal do site de jogos</title>
+
+    <script src="bootstrap-4.5.0-dist/jquery.js"></script>
+    <script src="bootstrap-4.5.0-dist/bootstrap.min.js"></script>
+    <link href="/bootstrap-4.5.0-dist/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-4.5.0-dist/footer.css" rel="stylesheet">
+
+    <!-- CDN e css para social midia icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/bootstrap-4.5.0-dist/social_icon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- <object type="text/html" class="col-12" data="navbar.html"></object> -->
+    <div id="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">JV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preco.html">Preços</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Jogos
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="jogo1.html">League of Legends</a>
+                            <a class="dropdown-item" href="jogo2.html">Forza Horizon 4</a>
+                            <a class="dropdown-item" href="jogo3.html">God of War</a>
+                            <a class="dropdown-item" href="jogo4.html">The Legend of Zelda</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="main">
+
+            <div class="table-responsive-sm col-sm-12 col-md-10 mx-auto pt-5">
+                <h1>Preços</h1>
+
+                <table class="table table-sm table-dark text-center pl-5">
+                    <caption>Tabela 1: Comparativo Jogos</caption>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Data lançamento</th>
+                        <th scope="col">Estilo</th>
+                        <th scope="col">Fabricante</th>
+                        <th scope="col">Plataformas</th>
+                        <th scope="col" colspan="2">Preço (De/Até)</th>
+                    </tr>
+                    <!-- Jogo 1-->
+                    <tr>
+                        <td rowspan="2">League of Legends</td>
+                        <td rowspan="2">27 de outubro de 2009 (10 anos)</td>
+                        <td rowspan="2">Multiplayer online battle arena</td>
+                        <td rowspan="2">Riot Games</td>
+                        <td bgcolor="#101010">Microsoft Windows</td>
+                        <td rowspan="2">Free</td>
+                        <td rowspan="2">Free</td>
+                    </tr>
+
+                    <tr>
+                        <td>OS X</td>
+
+                    </tr>
+                    <!-- Jogo 2-->
+                    <tr>
+                        <td rowspan="2">Forza Horizon 4</td>
+                        <td rowspan="2">02 de Outubro de 2018</td>
+                        <td rowspan="2">Um jogador Multijogador</td>
+                        <td rowspan="2">Microsoft Studios</td>
+                        <td>Xbox One </td>
+                        <td rowspan="2">R$ 194,95</td>
+                        <td rowspan="2">R$ 312,45</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Windows</td>
+
+                    </tr>
+                    <!-- Jogo 3-->
+                    <tr>
+                        <td rowspan="4">God of War</td>
+                        <td rowspan="4">22 de março de 2005</td>
+                        <td rowspan="4">Ação-aventura Hack and slash</td>
+                        <td rowspan="4">Sony Interactive Entertainment</td>
+                        <td bgcolor="#101010">PlayStation 2</td>
+                        <td rowspan="4">R$ 59,90</td>
+                        <td rowspan="4">R$ 79,00</td>
+                    </tr>
+                    <tr>
+                        <td>Java ME</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 3</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 4</td>
+                    </tr>
+                    <!-- Jogo 4-->
+                    <tr>
+                        <td rowspan="4">The Legend of Zelda</td>
+                        <td rowspan="4">21 de fevereiro de 1986</td>
+                        <td rowspan="4">Ação-aventura</td>
+                        <td rowspan="4">Nintendo</td>
+                        <td bgcolor="#101010">Super Nintendo </td>
+                        <td rowspan="4">R$ 189,90</td>
+                        <td rowspan="4">R$ 250,79</td>
+                    </tr>
+                    <tr>
+                        <td>Game Boy</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo Switch</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo 64</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class="text-left">Valores consultados em 22/03/2020.</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="page-footer font-small pt-4 bg-dark text-white">
+
+
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row text-center">
+
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase"><a href="faleconosco.html">Fale Conosco</a></h5>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Conecte</h5>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Contato</h5>
+                        <h5 class="">0800-000-000</h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class=" footer-copyright text-center py-3 ">© 2020 Copyright:
+                <a href="https://jardel.dev/ "> jardel.dev</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+    </div>
+</body>
+
+</html>
