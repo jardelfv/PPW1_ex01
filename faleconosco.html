@@ -4,68 +4,118 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Jardel Vasconcelos">
-    <link href="estilo.css" rel="stylesheet">
     <title>Fale Conosco</title>
+
+    <script src="bootstrap-4.5.0-dist/jquery.js"></script>
+    <script src="bootstrap-4.5.0-dist/bootstrap.min.js"></script>
+    <link href="/bootstrap-4.5.0-dist/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-4.5.0-dist/footer.css" rel="stylesheet">
+
+    <!-- CDN e css para social midia icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/bootstrap-4.5.0-dist/social_icon.css" rel="stylesheet">
+    
 </head>
 
 <body>
     <div id="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">JV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preco.html">Preços</a>
+                    </li>
 
-        <div class="topo">
-            <h1>Fale Conosco</h1>
-        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Jogos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="jogo1.html">League of Legends</a>
+                            <a class="dropdown-item" href="jogo2.html">Forza Horizon 4</a>
+                            <a class="dropdown-item" href="jogo3.html">God of War</a>
+                            <a class="dropdown-item" href="jogo4.html">The Legend of Zelda</a>
+                        </div>
+                    </li>
 
-        <section id="main">
-
-            <nav class="vertical">
-                <h2>Links para jogos</h2>
-                <br>
-                <ul>
-                    <li><a href="jogo1.html">League of Legends</a></li>
-                    <li><a href="jogo2.html">Forza Horizon 4</a></li>
-                    <li><a href="jogo3.html">God of War</a></li>
-                    <li><a href="jogo4.html">The Legend of Zelda</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+                    </li>
                 </ul>
-            </nav>
-
-            <section class="conteudo">
-            <p>
-                <a href="index.html">Página Inicial</a>
-            </p>
-            <br>
-
-            <form>
-                <div class="form1" >
-                    <label for="Nome:" class="faleconosco">Nome:</label><br>
-                    <label for="Sobrenome:" class="faleconosco">Sobrenome:</label><br>
-                    <label for="Email:" class="faleconosco">Email:</label><br>
-                    <label for="Mensagem:" class="faleconosco">Mensagem:</label><br>
-                </div>
-                <div class="form1">
-                    <input type="text" id="Nome" name="Nome" class="largura-inputs2"><br>
-                    <input type="text" id="Sobrenome" name="Sobrenome" class="largura-inputs2"><br>
-                    <input type="email" id="Email" name="Email" placeholder="nickname@mail.com" class="largura-inputs2"><br>
-                    <textarea id="Mensagem" class="msg" class="largura-inputs2"></textarea><br>
-                    <input type="submit" value="Enviar">
-                </div>
-                
-            </form>
-
-            <div id="ajuste">
-                <br>
             </div>
+        </nav>
+
+       <section class="pl-5 pt-3 pb-3">
+            <h1>Fale Conosco</h1>
+
+            <div class="col-sm-12 col-md-8 mx-auto pt-5">
+                <form>
+                    <div class="form1">
+                        <label for="Nome:" class="faleconosco">Nome:</label><br>
+                        <label for="Sobrenome:" class="faleconosco">Sobrenome:</label><br>
+                        <label for="Email:" class="faleconosco">Email:</label><br>
+                        <label for="Mensagem:" class="faleconosco">Mensagem:</label><br>
+                    </div>
+                    <div class="form1">
+                        <input type="text" id="Nome" name="Nome" class="largura-inputs2"><br>
+                        <input type="text" id="Sobrenome" name="Sobrenome" class="largura-inputs2"><br>
+                        <input type="email" id="Email" name="Email" placeholder="nickname@mail.com" class="largura-inputs2"><br>
+                        <textarea id="Mensagem" class="msg" class="largura-inputs2"></textarea><br>
+                        <input type="submit" value="Enviar">
+                    </div>
             
-            </section>
+                </form>
+            
+            </div>
         </section>
     
-        <footer>
-            <div id="menu-footer">
-                <ul>
-                    <li><a href="cadastro.html">&raquo;Cadastre-se</a></li>
-                    <li><a href="faleconosco.html">&raquo;Fale Conosco</a></li>
-                    <li><a href="#">&raquo;Facebook</a></li>
-                </ul>
+        <!-- Footer -->
+        <footer class="page-footer font-small pt-4 bg-dark text-white">
+            <div class="container-fluid text-center text-md-left">
+    
+                <!-- Grid row -->
+                <div class="row text-center">
+    
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase"><a href="faleconosco.html">Fale Conosco</a></h5>
+    
+                    </div>
+    
+                    <hr class="clearfix w-100 d-md-none pb-3">
+    
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Conecte</h5>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Contato</h5>
+                        <h5 class="">0800-000-000</h5>
+                    </div>
+    
+                </div>
+    
             </div>
+    
+            <!-- Copyright -->
+            <div class=" footer-copyright text-center py-3 ">© 2020 Copyright:
+                <a href="https://jardel.dev/ "> jardel.dev</a>
+            </div>
+            <!-- Copyright -->
+    
         </footer>
     </div>
 </body>
