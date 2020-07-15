@@ -6,18 +6,22 @@
     <meta name="author" content="Jardel Vasconcelos">
     <title>Cadastre-se</title>
 
-    <script src="bootstrap-4.5.0-dist/jquery.js"></script>
-    <script src="bootstrap-4.5.0-dist/bootstrap.min.js"></script>
+    <script src="/bootstrap-4.5.0-dist/jquery.js"></script>
+    <script src="/bootstrap-4.5.0-dist/bootstrap.min.js"></script>
     <link href="/bootstrap-4.5.0-dist/bootstrap.min.css" rel="stylesheet">
     <link href="/bootstrap-4.5.0-dist/footer.css" rel="stylesheet">
 
     <!-- CDN e css para social midia icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/bootstrap-4.5.0-dist/social_icon.css" rel="stylesheet">
+
+    
     
 </head>
 
 <body>
+    <!-- JS para formatar números celular e email -->
+    <script src="/js/cadastro.js"></script>
     <div id="container">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -62,10 +66,7 @@
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputNome">Nome</label>
-        
-        
-                            <label for="fone" class="cadastro">Telefone:</label><br>
+                            <label for="inputNome">Nome:</label><br>
                             <input type="text" class="form-control" id="inputNome">
                         </div>
                         <div class="form-group col-md-6">
@@ -89,7 +90,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputFone">Telefone:</label>
-                            <input type="tel" class="form-control" id="inputFone" placeholder="(xx)xxxxx-xxxx">
+                            <input type="tel" class="form-control" name="telefone" onkeyup="mascara( this, mtel );" placeholder="(99)9.1234-5678">
         
                         </div>
                         <div class="form-group col-md-6">
